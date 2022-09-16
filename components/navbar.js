@@ -1,4 +1,5 @@
 import { useTheme } from "next-themes"
+import Link from "next/link"
 import { useEffect, useState } from "react"
 
 
@@ -12,15 +13,16 @@ function MobileNav({ open, setOpen }) {
     return (
         <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
             <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-                <a className="text-xl font-semibold" href="/">LOGO</a>
+                <Link href="/"><a className="text-xl font-semibold" >LOGO</a></Link>
             </div>
             <div className="flex flex-col ml-4">
-                <a className="text-xl font-medium my-4" href="/about" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                <Link href="/about" ><a className="text-xl font-medium my-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                     About
-                </a>
-                <a className="text-xl font-normal my-4" href="/contact" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                </a></Link>
+                <Link href="/contact">
+                <a className="text-xl font-normal my-4"  onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
                     Contact
-                </a>
+                </a></Link>
             </div>
         </div>
     )
@@ -41,7 +43,7 @@ export default function Navbar() {
         <nav className="fixed top-0 left-0 right-0 flex bg-white px-4 py-4 h-16 items-center md:px-16">
             <MobileNav open={open} setOpen={setOpen} />
             <div className="w-3/12 flex items-center">
-                <a className="text-2xl font-bold" href="/">CAVANI</a>
+                <Link href="/"><a className="text-2xl font-bold" >CAVANI</a></Link>
             </div>
             <div className="w-9/12 flex justify-end items-center">
 
