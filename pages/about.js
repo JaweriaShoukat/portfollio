@@ -1,3 +1,4 @@
+import Progress from "../components/progress";
 
 export default function About() {
     return (
@@ -77,6 +78,34 @@ export default function About() {
                                 <span>Rain & Snow</span>
                             </li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div className="skills px-5 pt-24 ">
+                <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
+                    <div className="">
+                        <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-1/5 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-52  flex items-center tracking-[7px]">PROGRAMMING</h4>
+                        <ul>
+                            <li className="mb-2 text-neutral-700 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
+                                <span>Web Development</span>
+                            </li>
+                            <li className="mb-2 text-neutral-700 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
+                                <span>Graphic Design</span>
+                            </li>
+                            <li className="mb-2 text-neutral-700 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
+                                <span>Landing Page</span>
+                            </li>
+                            <li className="mb-2 text-neutral-700 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
+                                <span>On-Page SEO</span>
+                            </li>
+                            <li className="mb-2 text-neutral-700 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
+                                <span>Web Hosting</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div className="">
+                        <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-1/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40  flex items-center tracking-[7px]">LANGUAGE</h4>
+                        <Progress value={90}/>
                     </div>
                 </div>
             </div>

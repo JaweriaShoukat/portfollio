@@ -20,24 +20,31 @@ function MobileNav({ open, setOpen }) {
                     About
                 </a></Link>
                 <Link href="/contact">
-                <a className="text-xl font-normal my-4"  onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                    Contact
-                </a></Link>
+                    <a className="text-xl font-normal my-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
+                        Contact
+                    </a></Link>
             </div>
         </div>
     )
 }
 
-export default function Navbar() {
+export default function Navbar(props) {
 
     const [open, setOpen] = useState(false);
-
+    const [navID, setNavID] = useState(1);
 
 
     const [mounted, setMounted] = useState(false)
     const { theme, setTheme } = useTheme()
     useEffect(() => setMounted(true), [])
     if (!mounted) return null
+
+    const handleClick = (id) => {
+        setNavID(id)
+        props.sendData(navID)
+    }
+
+
 
     return (
         <nav className="fixed top-0 left-0 right-0 flex bg-white px-4 py-4 h-16 items-center md:px-16">
@@ -64,21 +71,31 @@ export default function Navbar() {
                 </div>
 
                 <div className="hidden md:flex">
-                    <NavLink to="/">
-                        Home
-                    </NavLink>
-                    <NavLink to="/about">
-                        About
-                    </NavLink>
-                    <NavLink to="#">
+                    <div onClick={() => handleClick(1)}>
+                        <NavLink>
+                            Home
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(2)}>
+                    <NavLink>
+                            About
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(3)}>
+                        <NavLink>
                         Portfolio
-                    </NavLink>
-                    <NavLink to="#">
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(4)}>
+                        <NavLink>
                         Services
-                    </NavLink>
-                    <NavLink to="#">
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(5)}>
+                        <NavLink>
                         Contact
-                    </NavLink>
+                        </NavLink>
+                    </div>
                 </div>
 
                 <div>
