@@ -5,7 +5,7 @@ import Partner2 from '../public/images/2.png';
 export default function Partners() {
     return (
         <div>
-            <table class="border-collapse border border-neutral-400 w-full">
+            <table className="border-collapse border border-neutral-400 w-full">
                 <tbody className='w-full'>
                     <tr>
                         <td className="opacity-50 hover:opacity-100 transition-all border border-slate-300">

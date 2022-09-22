@@ -6,6 +6,7 @@ import ProgressBar from "../components/progress";
 import Education from "../components/education";
 import Partners from "../components/partners";
 import Testimonial from "../components/testimonial";
+import Tabs from "../components/portfolio";
 
 export default function Home() {
 
@@ -74,12 +75,12 @@ export default function Home() {
         whileInView={"onscreen"}
         viewport={{ once: false, amount: 0.5 }}
         transition={{ staggerChildren: 0.5 }}
-        id="about" className="flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 pb-12">
+        id="about" className="flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24">
         <motion.div
           variants={imageAnimate}>
-          <div className="biography px-5 pt-24">
+          <div className="biography mb-20">
             <div className="">
-              <h4 className="mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40  flex items-center tracking-[7px]">ABOUT ME</h4>
+              <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">ABOUT ME</h4>
             </div>
             <div className="flex md:flex-row flex-col md:gap-20 gap-10">
               <div className="md:w-2/5 w-full">
@@ -111,10 +112,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="services px-5 pt-24 ">
+          <div className="services mb-20">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
               <div className="">
-                <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-1/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40  flex items-center tracking-[7px]">SERVICES</h4>
+                <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">SERVICES</h4>
                 <ul>
                   <li className="mb-2 text-neutral-700 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
                     <span>Web Development</span>
@@ -134,7 +135,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="">
-                <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-1/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40  flex items-center tracking-[7px]">INTERESTS</h4>
+                <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">INTERESTS</h4>
                 <ul>
                   <li className="mb-2 text-neutral-700 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
                     <span>Painting & Drawing</span>
@@ -155,10 +156,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="skills px-5 pt-24 ">
+          <div className="skills mb-20">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
               <div className="">
-                <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-1/5 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-52  flex items-center tracking-[7px]">PROGRAMMING</h4>
+                <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-56 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">PROGRAMMING</h4>
                 <div className="flex flex-col gap-7">
                   <ProgressBar programing="HTML & CSS" Percntg="45%" />
                   <ProgressBar programing="HTML & CSS" Percntg="45%" />
@@ -166,7 +167,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="">
-                <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-1/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40  flex items-center tracking-[7px]">LANGUAGE</h4>
+                <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">LANGUAGE</h4>
                 <div className="flex flex-col gap-7">
                   <ProgressBar programing="HTML & CSS" Percntg="45%" />
                   <ProgressBar programing="HTML & CSS" Percntg="45%" />
@@ -175,37 +176,74 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="education px-5 pt-24 ">
+          <div className="education mb-20">
             <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
               <div className="">
-                <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-3/12 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40  flex items-center tracking-[7px]">EDUCATION</h4>
+                <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">EDUCATION</h4>
                 <ul className="before:content[''] before:bg-neutral-400 before:w-[1px] before:h-full before:absolute relative flex flex-col gap-11">
-                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree"/>
-                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree"/>
-                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree"/>
+                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
+                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
+                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
                 </ul>
               </div>
               <div className="">
-                <h4 className="overflow-hidden mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-1/5 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-44  flex items-center tracking-[7px]">EXPERIENCE</h4>
+                <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">EXPERIENCE</h4>
                 <ul className="before:content[''] before:bg-neutral-400 before:w-[1px] before:h-full before:absolute relative flex flex-col gap-11">
-                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree"/>
-                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree"/>
-                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree"/>
+                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
+                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
+                  <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
                 </ul>
               </div>
             </div>
           </div>
-          <div className="partners px-5 pt-24">
+          <div className="partners mb-20">
             <div className="">
-              <h4 className="mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40  flex items-center tracking-[7px]">PARTNERS</h4>
+              <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">PARTNERS</h4>
               <Partners />
             </div>
           </div>
-          <div className="testimonial px-5 pt-24">
+          <div className="testimonial mb-24">
             <div className="">
-              <h4 className="mb-12 font-bold text-neutral-700 after:content-[''] md:after:w-4/6 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-52  flex items-center tracking-[7px]">TESTIMONIALS</h4>
+              <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-56 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">TESTIMONIALS</h4>
               <Testimonial />
             </div>
+          </div>
+        </motion.div>
+      </motion.div>
+    </div>
+
+
+    <div className={handleNav == 3 ? 'block' : 'hidden'}>
+      <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ staggerChildren: 0.5 }}
+        id="portfolio" className="flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24">
+        <motion.div
+          variants={imageAnimate}>
+
+          <div className="mb-24">
+            <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-[20rem] flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">Creative Portfolio</h4>
+            <Tabs />
+          </div>
+        </motion.div>
+      </motion.div>
+    </div>
+
+    <div className={handleNav == 4 ? 'block' : 'hidden'}>
+      <motion.div
+        initial={"offscreen"}
+        whileInView={"onscreen"}
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{ staggerChildren: 0.5 }}
+        id="portfolio" className="flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24">
+        <motion.div
+          variants={imageAnimate}>
+
+          <div className="mb-24">
+            <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">SERVICES</h4>
+            
           </div>
         </motion.div>
       </motion.div>
