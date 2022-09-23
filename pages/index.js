@@ -53,7 +53,7 @@ export default function Home() {
       <motion.div id="home" className="pl-12"
         variants={FadeOut}>
         <div>
-          <h2 className="md:text-5xl font-bold mb-6 text-neutral-700">KELLY EMERSON</h2>
+          <h2 className="md:text-5xl text-4xl font-bold mb-6 text-neutral-700">KELLY EMERSON</h2>
           <span className="line block mt-5 mb-6 h-1 bg-neutral-700 w-14"></span>
 
           <h3 className="text-2xl mb-14 flex">
