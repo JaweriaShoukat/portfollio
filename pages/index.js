@@ -21,7 +21,7 @@ export default function Home() {
 
   console.log(handleNav)
 
-  const imageAnimate = {
+  const FadeOut = {
     offscreen: {
       opacity: 0,
       x: ['-100vw'],
@@ -51,7 +51,7 @@ export default function Home() {
       transition={{ staggerChildren: 0.5 }}
       className={`${handleNav == undefined ? 'block' : 'hidden'} flex flex-col justify-center overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0`}>
       <motion.div id="home" className="pl-12"
-        variants={imageAnimate}>
+        variants={FadeOut}>
         <div>
           <h2 className="md:text-5xl font-bold mb-6 text-neutral-700">KELLY EMERSON</h2>
           <span className="line block mt-5 mb-6 h-1 bg-neutral-700 w-14"></span>
@@ -81,7 +81,7 @@ export default function Home() {
       transition={{ staggerChildren: 0.5 }}
       id="about" className={`${handleNav == 2 ? 'block' : 'hidden'} flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24`}>
       <motion.div
-        variants={imageAnimate}>
+        variants={FadeOut}>
         <div className="biography mb-20">
           <div className="">
             <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">ABOUT ME</h4>
@@ -223,7 +223,7 @@ export default function Home() {
       transition={{ staggerChildren: 0.5 }}
       id="portfolio" className={`${handleNav == 3 ? 'block' : 'hidden'} flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24`}>
       <motion.div
-        variants={imageAnimate}>
+        variants={FadeOut}>
 
         <div className="mb-24">
           <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-[20rem] flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">Creative Portfolio</h4>
@@ -240,7 +240,7 @@ export default function Home() {
       transition={{ staggerChildren: 0.5 }}
       id="services" className={`${handleNav == 4 ? 'block' : 'hidden'} flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24`}>
       <motion.div
-        variants={imageAnimate}>
+        variants={FadeOut}>
 
         <div className="mb-24">
           <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">SERVICES</h4>
@@ -275,7 +275,7 @@ export default function Home() {
       transition={{ staggerChildren: 0.5 }}
       id="contact" className={`${handleNav == 5 ? 'block' : 'hidden'} flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24`}>
       <motion.div
-        variants={imageAnimate}>
+        variants={FadeOut}>
 
         <div className="mb-24">
           <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-52 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">GET IN TOUCH</h4>
@@ -292,7 +292,7 @@ export default function Home() {
       transition={{ staggerChildren: 0.5 }}
       id="news" className={`${handleNav == 1 ? 'block' : 'hidden'} flex flex-col h-full overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 px-5 pt-24`}>
       <motion.div
-        variants={imageAnimate}>
+        variants={FadeOut}>
 
         <div className="mb-24">
           <h4 className="mb-12 font-bold uppercase text-neutral-700 after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 after:absolute after:ml-52 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">LATEST NEWS</h4>
