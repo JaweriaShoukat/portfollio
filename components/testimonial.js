@@ -16,7 +16,7 @@ export default function Testimonial() {
                 </div>
                 <div className='info'>
                     <h3 className="text-base font-semibold">Alexander Walker</h3>
-                    <span className="text-sm text-neutral-700">Graphics Designer</span>
+                    <span className="text-sm text-neutral-500">Graphics Designer</span>
                 </div>
             </div>
         </div>
