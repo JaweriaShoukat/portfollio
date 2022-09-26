@@ -49,8 +49,8 @@ export default function Home() {
       whileInView={"onscreen"}
       viewport={{ once: false, amount: 0.5 }}
       transition={{ staggerChildren: 0.5 }}
-      className={`${handleNav == undefined ? 'block' : 'hidden'} flex flex-col justify-center overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0`}>
-      <motion.div id="home" className="pl-12"
+      className={`${handleNav == undefined ? 'block' : 'hidden'} flex flex-col justify-center overflow-hidden overflow-y-scroll absolute top-0 bottom-0 left-0 right-0 `}>
+      <motion.div id="home" className="md:pl-12 pl-4"
         variants={FadeOut}>
         <div>
           <h2 className="md:text-5xl text-4xl font-bold mb-6 text-neutral-700">KELLY EMERSON</h2>

@@ -47,8 +47,51 @@ export default function Navbar(props) {
 
 
     return (
-        <nav className="fixed top-0 left-0 right-0 flex bg-white px-4 py-4 h-16 items-center md:px-16">
-            <MobileNav open={open} setOpen={setOpen} />
+
+        <nav className="fixed top-0 left-0 right-0 flex bg-white px-4 py-4 h-16 items-center md:px-16 custom-z-ind">
+
+            {/* mobile Menu Starts */}
+
+            <div className={`md:hidden absolute top-0 right-0 h-screen w-[50vw] z-50 bg-white transform ${open ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out  `}>
+                <div className="flex items-center justify-center mx-auto bg-white h-24" onClick={() => setOpen(false)}> {/*logo container*/}
+                    <Link href="/">
+                        <a className="text-xl font-semibold flex justify-center items-center">
+                            {/* <Image src={WhiteLogo} alt=''></Image> */}
+                        </a></Link>
+                </div>
+                <div className="flex flex-col gap-10 text-right text-black text-[15px]">
+                    <div onClick={() => handleClick(1)}>
+                        <NavLink>
+                            Home
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(2)}>
+                        <NavLink>
+                            About
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(3)}>
+                        <NavLink>
+                            Portfolio
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(4)}>
+                        <NavLink>
+                            Services
+                        </NavLink>
+                    </div>
+                    <div onClick={() => handleClick(5)}>
+                        <NavLink>
+                            Contact
+                        </NavLink>
+                    </div>
+                </div>
+            </div>
+
+            {/* mobile Menu End*/}
+
+
+
             <div className="w-3/12 flex items-center">
                 <Link href="/"><a className="text-2xl font-bold" >CAVANI</a></Link>
             </div>
@@ -77,23 +120,23 @@ export default function Navbar(props) {
                         </NavLink>
                     </div>
                     <div onClick={() => handleClick(2)}>
-                    <NavLink>
+                        <NavLink>
                             About
                         </NavLink>
                     </div>
                     <div onClick={() => handleClick(3)}>
                         <NavLink>
-                        Portfolio
+                            Portfolio
                         </NavLink>
                     </div>
                     <div onClick={() => handleClick(4)}>
                         <NavLink>
-                        Services
+                            Services
                         </NavLink>
                     </div>
                     <div onClick={() => handleClick(5)}>
                         <NavLink>
-                        Contact
+                            Contact
                         </NavLink>
                     </div>
                 </div>

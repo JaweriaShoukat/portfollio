@@ -36,4 +36,8 @@
       100% {opacity: 0; height: 0px;}
   }
   
+
+  .custom-z-ind{
+    z-index: 999;
+  }
   
