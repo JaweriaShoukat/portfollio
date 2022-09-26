@@ -5,23 +5,23 @@ export default function Contact() {
         <>
             <div className='grid md:grid-cols-3 grid-cols-1 gap-10 mb-10'>
                 <div className="border border-neutral-300 pt-5 px-3 pb-5 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mx-auto mb-2 text-neutral-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mx-auto mb-2 text-neutral-500 dark:text-white">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
                     </svg>
-                    <span className="text-base text-neutral-500">Ave Street, New York, USA</span>
+                    <span className="text-base text-neutral-500 dark:text-white">Ave Street, New York, USA</span>
                 </div>
                 <div className="border border-neutral-300 pt-5 px-3 pb-5 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mx-auto mb-2 text-neutral-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mx-auto mb-2 text-neutral-500 dark:text-white">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                     </svg>
-                    <span className="text-base text-neutral-500">Ave Street, New York, USA</span>
+                    <span className="text-base text-neutral-500 dark:text-white">Ave Street, New York, USA</span>
                 </div>
                 <div className="border border-neutral-300 pt-5 px-3 pb-5 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mx-auto mb-2 text-neutral-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="w-5 h-5 mx-auto mb-2 text-neutral-500 dark:text-white">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
                     </svg>
-                    <span className="text-base text-neutral-500">Ave Street, New York, USA</span>
+                    <span className="text-base text-neutral-500 dark:text-white">Ave Street, New York, USA</span>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ export default function Contact() {
                                      focus:text-neutral-700 focus:border-neutral-400 focus:outline-none bg-transparent"
                                 type='text' id="message" rows="4" placeholder="Message"></textarea>
                         </div>
-                        <button className="mt-12 px-8 py-4 bg-neutral-700 text-white border-2 border-transparent hover:bg-transparent hover:text-neutral-700 hover:border-neutral-700 text-base font-medium">
+                        <button className="px-8 py-4 bg-neutral-700 dark:bg-blue-900/30 text-white border-2 border-transparent hover:bg-transparent dark:hover:bg-transparent hover:border-neutral-700 dark:hover:border-blue-900/30 text-base font-medium mt-12">
                             Send Message</button>
                     </form>
                 </div>

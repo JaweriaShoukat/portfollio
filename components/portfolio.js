@@ -16,7 +16,7 @@ const Tabs = () => {
                         <li className="mr-5 last:mr-0">
                             <a
                                 className={
-                                    "text-base font-semibold py-3 rounded block leading-normal text-neutral-700" +
+                                    "text-base font-semibold py-3 rounded block leading-normal text-neutral-700 dark:text-white" +
                                     (openTab === 1
                                         ? ""
                                         : "")
@@ -35,7 +35,7 @@ const Tabs = () => {
                         <li className="mr-5 last:mr-0">
                             <a
                                 className={
-                                    "text-base font-semibold py-3 rounded block leading-normal text-neutral-700" +
+                                    "text-base font-semibold py-3 rounded block leading-normal text-neutral-700 dark:text-white" +
                                     (openTab === 2
                                         ? ""
                                         : "")
@@ -54,7 +54,7 @@ const Tabs = () => {
                         <li className="mr-5 last:mr-0">
                             <a
                                 className={
-                                    "text-base font-semibold py-3 rounded block leading-normal text-neutral-700" +
+                                    "text-base font-semibold py-3 rounded block leading-normal text-neutral-700 dark:text-white" +
                                     (openTab === 3
                                         ? ""
                                         : "")
@@ -102,9 +102,9 @@ function Project() {
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project1.jpg)" }}></div>
 
-                    <div className="detail bg-white absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
-                        <h3 className="text-base font-bold text-neutral-700">Kelly Hookin</h3>
-                        <span className="text-sm font-bold text-neutral-500">Vimeo</span>
+                    <div className="detail bg-white dark:bg-[#182750] absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
+                        <h3 className="text-base font-bold text-neutral-700 dark:text-white">Kelly Hookin</h3>
+                        <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
                 </div></a>
             </Link>
@@ -112,9 +112,9 @@ function Project() {
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project2.jpg)" }}></div>
 
-                    <div className="detail bg-white absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
-                        <h3 className="text-base font-bold text-neutral-700">Kelly Hookin</h3>
-                        <span className="text-sm font-bold text-neutral-500">Vimeo</span>
+                    <div className="detail bg-white dark:bg-[#182750] absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
+                        <h3 className="text-base font-bold text-neutral-700 dark:text-white">Kelly Hookin</h3>
+                        <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
                 </div></a>
             </Link>
@@ -122,9 +122,9 @@ function Project() {
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project3.jpg)" }}></div>
 
-                    <div className="detail bg-white absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
-                        <h3 className="text-base font-bold text-neutral-700">Kelly Hookin</h3>
-                        <span className="text-sm font-bold text-neutral-500">Vimeo</span>
+                    <div className="detail bg-white dark:bg-[#182750] absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
+                        <h3 className="text-base font-bold text-neutral-700 dark:text-white">Kelly Hookin</h3>
+                        <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
                 </div>
             </a>
@@ -133,9 +133,9 @@ function Project() {
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project1.jpg)" }}></div>
 
-                    <div className="detail bg-white absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
-                        <h3 className="text-base font-bold text-neutral-700">Kelly Hookin</h3>
-                        <span className="text-sm font-bold text-neutral-500">Vimeo</span>
+                    <div className="detail bg-white dark:bg-[#182750] absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
+                        <h3 className="text-base font-bold text-neutral-700 dark:text-white">Kelly Hookin</h3>
+                        <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
                 </div>
             </a>

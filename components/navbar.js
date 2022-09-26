@@ -48,7 +48,7 @@ export default function Navbar(props) {
 
     return (
 
-        <nav className="fixed top-0 left-0 right-0 flex bg-white px-4 py-4 h-16 items-center md:px-16 custom-z-ind">
+        <nav className="fixed top-0 left-0 right-0 flex bg-white dark:bg-blue-900/30 px-4 py-4 h-16 items-center md:px-16 custom-z-ind">
 
             {/* mobile Menu Starts */}
 

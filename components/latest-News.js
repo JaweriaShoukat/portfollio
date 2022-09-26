@@ -20,18 +20,18 @@ export default function LatestNews() {
 function News(props){
     return(
         <li className="flex py-7 relative group">
-                <span className="md:block hidden bg-zinc-400 min-w-[50px] w-[50px] h-[50px] text-neutral-700 text-center items-center text-base leading-[50px] rounded-full font-semibold">{props.num}</span>
+                <span className="md:block hidden bg-zinc-400 dark:bg-blue-900/30 min-w-[50px] w-[50px] h-[50px] text-neutral-700 dark:text-white text-center items-center text-base leading-[50px] rounded-full font-semibold">{props.num}</span>
                 <div className="detail grid gap-2 md:ml-7 md:pl-7 relative md:before:block before:hidden before:content-[''] before:w-[2px] before:bg-zinc-400 before:absolute before:left-0 before:top-[-17px] before:bottom-[-22px] transform before:rotate-[8deg]">
                     <div className="extra_metas">
                         <ul className="flex flex-wrap md:gap-3">
                             <li>
-                                <span className="text-base text-neutral-500">August 9, 2021</span>
+                                <span className="text-base text-neutral-500 dark:text-white">August 9, 2021</span>
                             </li>
-                            <li className="before:content-['/'] before:text-neutral-500 relative">
-                                <span className="text-base text-neutral-500 pl-3"><Link href='#'><a>Branding</a></Link></span>
+                            <li className="before:content-['/'] before:text-neutral-500 dark:before:text-white relative">
+                                <span className="text-base text-neutral-500 dark:text-white pl-3"><Link href='#'><a>Branding</a></Link></span>
                             </li>
-                            <li className="before:content-['/'] before:text-neutral-500 relative">
-                                <span className="text-base text-neutral-500 pl-3"><Link href='#'><a>0 Comments</a></Link></span>
+                            <li className="before:content-['/'] before:text-neutral-500 dark:before:text-white relative">
+                                <span className="text-base text-neutral-500 dark:text-white pl-3"><Link href='#'><a>0 Comments</a></Link></span>
                             </li>
                         </ul>
                     </div>
