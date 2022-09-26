@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -41,3 +44,18 @@
     z-index: 999;
   }
   
+
+  .slick-slide {
+    margin: 0 15px;
+  }
+  
+  /* the parent */
+  .slick-list {
+    margin: 0 -20px;
+  }
+
+  .slick-track {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
