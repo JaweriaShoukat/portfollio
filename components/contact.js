@@ -37,7 +37,7 @@ export default function Contact() {
                                      focus:text-neutral-700 focus:border-neutral-400 focus:outline-none bg-transparent"
                                 type='text' id="message" rows="4" placeholder="Message"></textarea>
                         </div>
-                        <button className="px-8 py-4 bg-neutral-700 dark:bg-blue-900/30 text-white border-2 border-transparent hover:bg-transparent dark:hover:bg-transparent hover:border-neutral-700 dark:hover:border-blue-900/30 text-base font-medium mt-12">
+                        <button className="px-8 py-4 bg-neutral-700 dark:bg-blue-900/30 text-white hover:text-neutral-700 dark:text-white border-2 border-transparent hover:bg-transparent dark:hover:bg-transparent hover:border-neutral-700 dark:hover:border-blue-900/30 text-base font-medium mt-12">
                             Send Message</button>
                     </form>
                 </div>
