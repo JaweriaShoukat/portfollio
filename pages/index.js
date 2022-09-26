@@ -84,7 +84,7 @@ export default function Home() {
         variants={FadeOut}>
         <div className="biography mb-20">
           <div className="">
-            <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400  dark:after:bg-blue-900/30 after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">ABOUT ME</h4>
+            <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400  dark:after:bg-white after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">ABOUT ME</h4>
           </div>
           <div className="flex md:flex-row flex-col md:gap-20 gap-10">
             <div className="md:w-2/5 w-full">
