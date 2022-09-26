@@ -15,7 +15,7 @@ export default function Layout({ children }) {
                         <Image src={Banner} layout='fill' alt='' className=""></Image>
                     </figure>
                 </div>
-                <div className="content-Side md:w-[65%] w-full bg-teal-50/70 dark:bg-blue-900/30 absolute top-0 bottom-0 right-0 flex items-center">
+                <div className="content-Side md:w-[65%] w-full bg-teal-50/70 dark:bg-[#151e36] absolute top-0 bottom-0 right-0 flex items-center">
                     {children}
                 </div>
             </div>
