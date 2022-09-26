@@ -48,18 +48,18 @@ export default function Navbar(props) {
 
     return (
 
-        <nav className="fixed top-0 left-0 right-0 flex bg-white dark:bg-blue-900/30 px-4 py-4 h-16 items-center md:px-16 custom-z-ind">
+        <nav className="fixed top-0 left-0 right-0 flex bg-white dark:bg-[#182750] px-4 py-4 h-16 items-center md:px-16 custom-z-ind">
 
             {/* mobile Menu Starts */}
 
-            <div className={`md:hidden absolute top-0 right-0 h-screen w-[50vw] z-50 bg-white transform ${open ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out  `}>
-                <div className="flex items-center justify-center mx-auto bg-white h-24" onClick={() => setOpen(false)}> {/*logo container*/}
+            <div className={`md:hidden absolute top-0 right-0 h-screen w-[50vw] z-50 bg-white dark:bg-[#182750] transform ${open ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out  `}>
+                <div className="flex items-center justify-center mx-auto bg-white dark:bg-[#182750] h-24" onClick={() => setOpen(false)}> {/*logo container*/}
                     <Link href="/">
                         <a className="text-xl font-semibold flex justify-center items-center">
                             {/* <Image src={WhiteLogo} alt=''></Image> */}
                         </a></Link>
                 </div>
-                <div className="flex flex-col gap-10 text-right text-black text-[15px]">
+                <div className="flex flex-col gap-10 text-right text-black dark:text-white text-[15px]">
                     <div onClick={() => handleClick(1)}>
                         <NavLink>
                             Home
