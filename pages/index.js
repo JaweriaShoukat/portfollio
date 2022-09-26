@@ -67,7 +67,7 @@ export default function Home() {
         </div>
         <div className="">
           <Link href='#'>
-            <a className="px-8 py-4 bg-neutral-700 dark:bg-blue-900/30 text-white hover:text-neutral-700 border-2 border-transparent hover:bg-transparent dark:hover:bg-transparent hover:border-neutral-700 dark:hover:border-blue-900/30 text-base font-medium">Learn More</a>
+            <a className="px-8 py-4 bg-neutral-700 dark:bg-blue-900/30 text-white dark:text-white hover:text-neutral-700 border-2 border-transparent hover:bg-transparent dark:hover:bg-transparent hover:border-neutral-700 dark:hover:border-blue-900/30 text-base font-medium">Learn More</a>
           </Link>
         </div>
       </motion.div>
