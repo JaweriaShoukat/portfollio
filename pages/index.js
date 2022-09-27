@@ -53,7 +53,7 @@ export default function Home() {
       <motion.div id="home" className="md:pl-12 pl-4"
         variants={FadeOut}>
         <div>
-          <h2 className="md:text-5xl text-4xl font-bold mb-6">KELLY EMERSON</h2>
+          <h2 className="md:text-5xl text-4xl font-bold mb-6 text-neutral-700 dark:text-white">Jaweria Shoukat</h2>
           <span className="line block mt-5 mb-6 h-1 bg-neutral-700 dark:bg-blue-900/70 w-14"></span>
 
           <h3 className="text-2xl mb-14 flex">
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
           <div className="flex md:flex-row flex-col md:gap-20 gap-10">
             <div className="md:w-2/5 w-full">
-              <p className="mb-5 text-base font-normal">Hello there! My name is <strong>Alan Walker.</strong> I am a graphic designer, and I'm very passionate and dedicated to my work.</p>
+              <p className="mb-5 text-base font-normal">Hello there! My name is <strong>Jaweria.</strong> I am a graphic designer, and I'm very passionate and dedicated to my work.</p>
               <p className="mb-5 text-base font-normal">With 20 years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success.</p>
             </div>
             <div className="md:w-2/5 w-full">
