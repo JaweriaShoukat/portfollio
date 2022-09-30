@@ -64,3 +64,30 @@ body {
     padding-top: 20px;
     padding-bottom: 50px;
   }
+  .hdr a{
+    position: relative;
+    padding-left: 22px;
+    padding-right: 22px;
+    line-height: 38px;
+    display: inline-block;
+  }
+  .hdr a:hover{
+    color: #ffffff;
+    transition: all .5s ease .3s;
+  }
+  .hdr a::after{
+    left: 0;
+    background: #333;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    line-height: 38px;
+    width: 0;
+    height: 100%;
+    transition: all .6s ease .3s;
+    z-index: -1;
+  }
+  .hdr a:hover:after {
+    width: 100%;
+}

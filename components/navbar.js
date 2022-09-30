@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 
 
 function NavLink({ to, children }) {
-    return <a href={to} className={`mx-4`}>
+    return <a href={to} className={``}>
         {children}
     </a>
 }
@@ -40,7 +40,7 @@ export default function Navbar(props) {
                             {/* <Image src={WhiteLogo} alt=''></Image> */}
                         </a></Link>
                 </div>
-                <div className="flex flex-col gap-5 text-right text-black dark:text-white text-[15px]">
+                <div className="flex flex-col gap-5 text-right text-black dark:text-white text-[15px] ">
                     <div onClick={() => handleClick(1)}>
                         <NavLink>
                             Home
@@ -94,27 +94,27 @@ export default function Navbar(props) {
                 </div>
 
                 <div className="hidden md:flex">
-                    <div onClick={() => handleClick(1)}>
+                    <div onClick={() => handleClick(1)} className="hdr">
                         <NavLink>
                             Home
                         </NavLink>
                     </div>
-                    <div onClick={() => handleClick(2)}>
+                    <div onClick={() => handleClick(2)} className="hdr">
                         <NavLink>
                             About
                         </NavLink>
                     </div>
-                    <div onClick={() => handleClick(3)}>
+                    <div onClick={() => handleClick(3)} className="hdr">
                         <NavLink>
                             Portfolio
                         </NavLink>
                     </div>
-                    <div onClick={() => handleClick(4)}>
+                    <div onClick={() => handleClick(4)} className="hdr">
                         <NavLink>
                             Services
                         </NavLink>
                     </div>
-                    <div onClick={() => handleClick(5)}>
+                    <div onClick={() => handleClick(5)} className="hdr">
                         <NavLink>
                             Contact
                         </NavLink>
@@ -122,7 +122,7 @@ export default function Navbar(props) {
                 </div>
 
                 <div>
-                    <button className="bg-black text-white dark:bg-white dark:text-black px-2 py-2 rounded"
+                    <button className="bg-black text-white dark:bg-white dark:text-black px-2 py-2 ml-3 rounded"
                         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
                     >
                         {theme === 'light' ?
