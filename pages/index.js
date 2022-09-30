@@ -162,17 +162,17 @@ export default function Home() {
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-56 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">PROGRAMMING</h4>
               <div className="flex flex-col gap-7">
-                <ProgressBar programing="Javascript" Percntg="45%" layout="javascript" />
-                <ProgressBar programing="WordPress" Percntg="70%" layout="wordPress" />
-                <ProgressBar programing="Theme Customization" Percntg="50%" layout="theme-custom" />
+                <ProgressBar programing="Javascript" Percntg="50" />
+                <ProgressBar programing="WordPress" Percntg="70" />
+                <ProgressBar programing="Theme Customization" Percntg="50" />
               </div>
             </div>
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">LANGUAGE</h4>
               <div className="flex flex-col gap-7">
-                <ProgressBar programing="Figma to Tailwind" Percntg="70%" layout="tailwind" />
-                <ProgressBar programing="HTML5 & CSS3" Percntg="75%" layout="HTML-CSS" />
-                <ProgressBar programing="Tailwind + Nextjs" Percntg="65%" layout="Nextjs" />
+                <ProgressBar programing="Figma to Tailwind" Percntg="70" />
+                <ProgressBar programing="HTML5 & CSS3" Percntg="75" />
+                <ProgressBar programing="Tailwind + Nextjs" Percntg="65" />
               </div>
             </div>
           </div>
