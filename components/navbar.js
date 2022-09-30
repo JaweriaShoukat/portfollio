@@ -9,25 +9,6 @@ function NavLink({ to, children }) {
     </a>
 }
 
-function MobileNav({ open, setOpen }) {
-    return (
-        <div className={`absolute top-0 left-0 h-screen w-screen bg-white transform ${open ? "-translate-x-0" : "-translate-x-full"} transition-transform duration-300 ease-in-out filter drop-shadow-md `}>
-            <div className="flex items-center justify-center filter drop-shadow-md bg-white h-20"> {/*logo container*/}
-                <Link href="/"><a className="text-xl font-semibold" >LOGO</a></Link>
-            </div>
-            <div className="flex flex-col ml-4">
-                <Link href="/about" ><a className="text-xl font-medium my-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                    About
-                </a></Link>
-                <Link href="/contact">
-                    <a className="text-xl font-normal my-4" onClick={() => setTimeout(() => { setOpen(!open) }, 100)}>
-                        Contact
-                    </a></Link>
-            </div>
-        </div>
-    )
-}
-
 export default function Navbar(props) {
 
     const [open, setOpen] = useState(false);
@@ -91,9 +72,8 @@ export default function Navbar(props) {
             {/* mobile Menu End*/}
 
 
-
             <div className="w-3/12 flex items-center">
-                <Link href="/"><a className="text-2xl font-bold" >CAVANI</a></Link>
+                <Link href="/"><a className="text-xl font-medium" >JV WebCreation</a></Link>
             </div>
             <div className="w-9/12 flex justify-end items-center">
 
