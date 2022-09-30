@@ -9,7 +9,7 @@ export default function ProgressBar(props) {
     },
     onscreen: {
       opacity: 1,
-      width: "45%",
+      width: "auto",
       transition: {
         type: "ease",
         duration: 1,
@@ -34,7 +34,7 @@ export default function ProgressBar(props) {
         <motion.div
           variants={Progress}
 
-          className="bg-blue-600 h-1 text-xs font-medium text-neutral-700 text-right p-0.5 leading-none rounded-full"
+          className={'bg-blue-600 h-1 text-xs font-medium text-neutral-700 text-right p-0.5 leading-none rounded-full ' + props.layout}
         ></motion.div>
       </motion.div>
     </div>

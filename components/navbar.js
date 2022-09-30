@@ -72,10 +72,10 @@ export default function Navbar(props) {
             {/* mobile Menu End*/}
 
 
-            <div className="w-3/12 flex items-center">
-                <Link href="/"><a className="text-xl font-medium" >JV WebCreation</a></Link>
+            <div className="w-6/12 flex items-center">
+                <Link href="/"><a className="md:text-xl font-medium" >JV WebCreation</a></Link>
             </div>
-            <div className="w-9/12 flex justify-end items-center">
+            <div className="w-6/12 flex justify-end items-center">
 
                 <div className="z-50 flex relative w-8 h-8 flex-col justify-between items-center md:hidden" onClick={() => {
                     setOpen(!open)

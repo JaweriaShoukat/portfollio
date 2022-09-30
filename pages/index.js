@@ -88,28 +88,28 @@ export default function Home() {
           </div>
           <div className="flex md:flex-row flex-col md:gap-20 gap-10">
             <div className="md:w-2/5 w-full">
-              <p className="mb-5 text-base font-normal">Hello there! My name is <strong>Jaweria.</strong> I am a graphic designer, and I'm very passionate and dedicated to my work.</p>
-              <p className="mb-5 text-base font-normal">With 20 years experience as a professional a graphic designer, I have acquired the skills and knowledge necessary to make your project a success.</p>
+              <p className="mb-5 text-base font-normal">Hello there! My name is <strong>Jaweria.</strong> I am a Front-end developer, and I'm very passionate and dedicated to my work.</p>
+              <p className="mb-5 text-base font-normal">With 3 years experience as a professional a Front-end developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
             </div>
             <div className="md:w-2/5 w-full">
               <ul>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Name:</strong></span><span className="col-span-2">Alan Walker</span>
+                  <span><strong>Name:</strong></span><span className="col-span-2">Jaweria Shoukat</span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Address:</strong></span><span className="col-span-2">Ave Street, New York, USA</span>
+                  <span><strong>Address:</strong></span><span className="col-span-2">AHS, Lahore, Pakistan</span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Study:</strong></span><span className="col-span-2">Univercity of Oxford</span>
+                  <span><strong>Study:</strong></span><span className="col-span-2">Shaheed Benazir Bhutto University SBA</span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Degree:</strong></span><span className="col-span-2">Master of Science</span>
+                  <span><strong>Degree:</strong></span><span className="col-span-2">BCS</span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Mail:</strong></span><span className="col-span-2">hello@cavani.com</span>
+                  <span><strong>Mail:</strong></span><span className="col-span-2"><a href="mailto:jaweeriashoukat@gmail.com" rel="noreferrer">jaweeriashoukat@gmail.com</a></span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Phone:</strong></span><span className="col-span-2">+77 022 444 05 05</span>
+                  <span><strong>Phone:</strong></span><span className="col-span-2"><a href="tel:+923000000000" rel="noreferrer">+92 3000000000</a></span>
                 </li>
               </ul>
             </div>
@@ -117,15 +117,15 @@ export default function Home() {
         </div>
 
         <div className="services mb-20">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">SERVICES</h4>
               <ul>
                 <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
-                  <span>Web Development</span>
+                  <span>Figma to Tailwind</span>
                 </li>
                 <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
-                  <span>Graphic Design</span>
+                  <span>Web Development</span>
                 </li>
                 <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
                   <span>Landing Page</span>
@@ -142,60 +142,55 @@ export default function Home() {
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">INTERESTS</h4>
               <ul>
                 <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
-                  <span>Painting & Drawing</span>
-                </li>
-                <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
-                  <span>Reading & Writing</span>
+                  <span>Rain & Snow</span>
                 </li>
                 <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
                   <span>Music & Cinema</span>
                 </li>
                 <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
-                  <span>Travel & Picnik</span>
+                  <span>Reading & Writing</span>
                 </li>
                 <li className="mb-2 text-base font-normal before:content-[_'\2023'] before:w-7 before:h-7 before:text-4xl before:leading-5 flex items-center">
-                  <span>Rain & Snow</span>
+                  <span>Travel & Picnik</span>
                 </li>
               </ul>
             </div>
           </div>
         </div>
         <div className="skills mb-20">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-56 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">PROGRAMMING</h4>
               <div className="flex flex-col gap-7">
-                <ProgressBar programing="HTML & CSS" Percntg="45%" />
-                <ProgressBar programing="HTML & CSS" Percntg="45%" />
-                <ProgressBar programing="HTML & CSS" Percntg="45%" />
+                <ProgressBar programing="Javascript" Percntg="45%" layout="javascript" />
+                <ProgressBar programing="WordPress" Percntg="70%" layout="wordPress" />
+                <ProgressBar programing="Theme Customization" Percntg="50%" layout="theme-custom" />
               </div>
             </div>
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">LANGUAGE</h4>
               <div className="flex flex-col gap-7">
-                <ProgressBar programing="HTML & CSS" Percntg="45%" />
-                <ProgressBar programing="HTML & CSS" Percntg="45%" />
-                <ProgressBar programing="HTML & CSS" Percntg="45%" />
+                <ProgressBar programing="Figma to Tailwind" Percntg="70%" layout="tailwind" />
+                <ProgressBar programing="HTML5 & CSS3" Percntg="75%" layout="HTML-CSS" />
+                <ProgressBar programing="Tailwind + Nextjs" Percntg="65%" layout="Nextjs" />
               </div>
             </div>
           </div>
         </div>
         <div className="education mb-20">
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-16">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-12">
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">EDUCATION</h4>
               <ul className="before:content[''] before:bg-neutral-400 before:w-[1px] before:h-full before:absolute relative flex flex-col gap-11">
-                <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
-                <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
-                <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
+                <Education date="2018 - 2020" org="SBB University SBA" title="BCSc Degree" />
+                <Education date="2016 - 1018" org="Girls Degree College SBA" title="ICSc" />
               </ul>
             </div>
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">EXPERIENCE</h4>
               <ul className="before:content[''] before:bg-neutral-400 before:w-[1px] before:h-full before:absolute relative flex flex-col gap-11">
-                <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
-                <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
-                <Education date="2014 - 2020" uni="Oxford Univercity" degTitle="Master Degree" />
+                <Education date="2020 - running" org="SoftsGens" title="Front-end Developer" />
+                <Education date="2020 - running" org="SoftsGens" title="Front-end Developer" />
               </ul>
             </div>
           </div>
