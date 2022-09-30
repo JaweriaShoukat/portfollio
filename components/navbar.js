@@ -40,7 +40,7 @@ export default function Navbar(props) {
                             {/* <Image src={WhiteLogo} alt=''></Image> */}
                         </a></Link>
                 </div>
-                <div className="flex flex-col gap-5 text-right text-black dark:text-white text-[15px] ">
+                <div className="flex flex-col gap-5 text-right text-black dark:text-white text-[15px] mx-4">
                     <div onClick={() => handleClick(1)}>
                         <NavLink>
                             Home
