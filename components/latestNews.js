@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import News1 from '../public/images/news1.jpg';
 
-export default function LatestNews() {
+export default function Latest() {
   return (
     <div>
         <ul>

@@ -1,25 +1,8 @@
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
-import Navbar from "../components/navbar";
-import { useState } from "react";
-import ProgressBar from "../components/progress";
-import Education from "../components/education";
-import Partners from "../components/partners";
-import Testimonial from "../components/testimonial";
-import Tabs from "../components/portfolio";
-import Service from "../components/service";
-import Contact from "../components/contact";
-import LatestNews from "../components/latest-News";
+
 
 export default function Home() {
-
-  const [handleNav, setHandleNav] = useState()
-
-  const changenav = (data) => {
-    setHandleNav(data)
-  }
-
-  console.log(handleNav)
 
   const FadeOut = {
     offscreen: {
@@ -69,6 +52,7 @@ export default function Home() {
         </div>
       </motion.div>
     </motion.div>
+
   )
 }
 
