@@ -12,20 +12,11 @@ function NavLink({ to, children }) {
 export default function Navbar(props) {
 
     const [open, setOpen] = useState(false);
-    const [navID, setNavID] = useState(1);
-
 
     const [mounted, setMounted] = useState(false)
     const { theme, setTheme } = useTheme()
     useEffect(() => setMounted(true), [])
     if (!mounted) return null
-
-    const handleClick = (id) => {
-        setNavID(id)
-        props.sendData(navID)
-    }
-
-
 
     return (
 
@@ -41,30 +32,30 @@ export default function Navbar(props) {
                         </a></Link>
                 </div>
                 <div className="flex flex-col gap-5 text-right text-black dark:text-white text-[15px] mx-4">
-                    <div onClick={() => handleClick(1)}>
-                        <NavLink>
+                <div className="hdr">
+                        <Link href='/'>
                             Home
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(2)}>
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/about'>
                             About
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(3)}>
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/portfolio'>
                             Portfolio
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(4)}>
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/services'>
                             Services
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(5)}>
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/contact'>
                             Contact
-                        </NavLink>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -94,30 +85,30 @@ export default function Navbar(props) {
                 </div>
 
                 <div className="hidden md:flex">
-                    <div onClick={() => handleClick(1)} className="hdr">
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/'>
                             Home
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(2)} className="hdr">
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/about'>
                             About
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(3)} className="hdr">
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/portfolio'>
                             Portfolio
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(4)} className="hdr">
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/services'>
                             Services
-                        </NavLink>
+                        </Link>
                     </div>
-                    <div onClick={() => handleClick(5)} className="hdr">
-                        <NavLink>
+                    <div className="hdr">
+                        <Link href='/contact'>
                             Contact
-                        </NavLink>
+                        </Link>
                     </div>
                 </div>
 

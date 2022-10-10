@@ -9,6 +9,9 @@
 body {
   @apply dark:bg-[#182750] text-black dark:text-white;
 }
+.hdr a::after{
+  @apply bg-[#333] dark:bg-transparent
+}
 }
 
 ::-webkit-scrollbar {
@@ -77,7 +80,7 @@ body {
   }
   .hdr a::after{
     left: 0;
-    background: #333;
+    
     content: "";
     position: absolute;
     top: 0;
