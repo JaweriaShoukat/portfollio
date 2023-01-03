@@ -3,12 +3,6 @@ import Link from "next/link"
 import { useEffect, useState } from "react"
 
 
-function NavLink({ to, children }) {
-    return <a href={to} className={``}>
-        {children}
-    </a>
-}
-
 export default function Navbar(props) {
 
     const [open, setOpen] = useState(false);
@@ -26,13 +20,12 @@ export default function Navbar(props) {
 
             <div className={`md:hidden absolute top-[63px] right-0 h-screen w-[50vw] z-50 bg-white dark:bg-[#182750] transform ${open ? "translate-x-0" : "translate-x-full"} transition-transform duration-300 ease-in-out  `}>
                 <div className="flex items-center justify-center mx-auto bg-white dark:bg-[#182750] h-24" onClick={() => setOpen(false)}> {/*logo container*/}
-                    <Link href="/">
-                        <a className="text-xl font-semibold flex justify-center items-center">
-                            {/* <Image src={WhiteLogo} alt=''></Image> */}
-                        </a></Link>
+                    <Link href="/" className="text-xl font-semibold flex justify-center items-center">
+                        {/* <Image src={WhiteLogo} alt=''></Image> */}
+                    </Link>
                 </div>
                 <div className="flex flex-col gap-5 text-right text-black dark:text-white text-[15px] mx-4">
-                <div className="hdr">
+                    <div className="hdr">
                         <Link href='/'>
                             Home
                         </Link>
@@ -64,7 +57,7 @@ export default function Navbar(props) {
 
 
             <div className="w-6/12 flex items-center">
-                <Link href="/"><a className="md:text-xl font-medium" >JV WebCreation</a></Link>
+                <Link href="/" className="md:text-xl font-medium">JV WebCreation</Link>
             </div>
             <div className="w-6/12 flex justify-end items-center">
 

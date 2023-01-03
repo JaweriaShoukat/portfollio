@@ -5,6 +5,7 @@ import ProgressBar from "../components/progress";
 import Education from "../components/education";
 import Partners from "../components/partners";
 import Testimonial from "../components/testimonial";
+import Link from "next/link";
 export default function About() {
     const FadeOut = {
         offscreen: {
@@ -58,10 +59,10 @@ export default function About() {
                   <span><strong>Degree:</strong></span><span className="col-span-2">BCS</span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Mail:</strong></span><span className="col-span-2"><a href="mailto:jaweeriashoukat@gmail.com" rel="noreferrer">jaweeriashoukat@gmail.com</a></span>
+                  <span><strong>Mail:</strong></span><span className="col-span-2"><Link href="mailto:jaweeriashoukat@gmail.com" rel="noreferrer">jaweeriashoukat@gmail.com</Link></span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Phone:</strong></span><span className="col-span-2"><a href="tel:+923000000000" rel="noreferrer">+92 3000000000</a></span>
+                  <span><strong>Phone:</strong></span><span className="col-span-2"><Link href="tel:+923000000000" rel="noreferrer">+92 3000000000</Link></span>
                 </li>
               </ul>
             </div>

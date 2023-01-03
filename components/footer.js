@@ -1,5 +1,6 @@
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram, AiFillSkype } from "react-icons/ai";
+import Link from "next/link";
 
 
 export default function Footer() {
@@ -12,49 +13,49 @@ export default function Footer() {
         <div>
             <ul className="flex gap-2 text-base">
               <li>
-              <a
+              <Link
                 href="#"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaFacebookF />
-              </a>
+              </Link>
               </li>
               <li>
-              <a
+              <Link
                 href="#"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaTwitter />
-              </a>
+              </Link>
               </li>
               <li>
-              <a
+              <Link
                 href="#"
                 target="_blank"
                 rel="noreferrer"
               >
                 <AiFillInstagram />
-              </a>
+              </Link>
               </li>
               <li>
-              <a
+              <Link
                 href="#"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaLinkedinIn />
-              </a>
+              </Link>
               </li>
               <li>
-              <a
+              <Link
                 href="#"
                 target="_blank"
                 rel="noreferrer"
               >
                 <AiFillSkype />
-              </a>
+              </Link>
               </li>
             </ul>
         </div>

@@ -14,7 +14,7 @@ const Tabs = () => {
                         role="tablist"
                     >
                         <li className="mr-5 last:mr-0">
-                            <a
+                            <Link
                                 className={
                                     "text-base font-semibold py-3 rounded block leading-normal text-neutral-700 dark:text-white" +
                                     (openTab === 1
@@ -30,10 +30,10 @@ const Tabs = () => {
                                 role="tablist"
                             >
                                 All
-                            </a>
+                            </Link>
                         </li>
                         <li className="mr-5 last:mr-0">
-                            <a
+                            <Link
                                 className={
                                     "text-base font-semibold py-3 rounded block leading-normal text-neutral-700 dark:text-white" +
                                     (openTab === 2
@@ -49,10 +49,10 @@ const Tabs = () => {
                                 role="tablist"
                             >
                                 Vimeo
-                            </a>
+                            </Link>
                         </li>
                         <li className="mr-5 last:mr-0">
-                            <a
+                            <Link
                                 className={
                                     "text-base font-semibold py-3 rounded block leading-normal text-neutral-700 dark:text-white" +
                                     (openTab === 3
@@ -68,7 +68,7 @@ const Tabs = () => {
                                 role="tablist"
                             >
                                 Youtube
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                     <div className="relative flex flex-col ">
@@ -98,7 +98,7 @@ export default Tabs;
 function Project() {
     return (
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
-            <Link href='#'><a>
+            <Link href='#'>
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project1.jpg)" }}></div>
 
@@ -106,9 +106,9 @@ function Project() {
                         <h3 className="text-base font-bold text-neutral-700 dark:text-white">Kelly Hookin</h3>
                         <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
-                </div></a>
+                </div>
             </Link>
-            <Link href='#'><a>
+            <Link href='#'>
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project2.jpg)" }}></div>
 
@@ -116,9 +116,9 @@ function Project() {
                         <h3 className="text-base font-bold text-neutral-700 dark:text-white">Kelly Hookin</h3>
                         <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
-                </div></a>
+                </div>
             </Link>
-            <Link href='#'><a>
+            <Link href='#'>
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project3.jpg)" }}></div>
 
@@ -127,9 +127,9 @@ function Project() {
                         <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
                 </div>
-            </a>
+
             </Link>
-            <Link href='#'><a>
+            <Link href='#'>
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project1.jpg)" }}></div>
 
@@ -138,7 +138,7 @@ function Project() {
                         <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
                     </div>
                 </div>
-            </a>
+
             </Link>
         </div>
     )
