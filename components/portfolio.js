@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { createClient } from "next-sanity";
 
 
 const Tabs = () => {
@@ -95,9 +96,20 @@ const Tabs = () => {
 export default Tabs;
 
 
-function Project() {
+function Project({ blogs }) {
+    console.log(blogs, '123');
     return (
         <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
+            {blogs?.map(item => <Link href='#' key={index}>
+                <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
+                    <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project1.jpg)" }}></div>
+
+                    <div className="detail bg-white dark:bg-[#182750] absolute -bottom-20 left-5 right-5 p-4 md:group-hover:-translate-y-24 group-hover:-translate-y-28 duration-500">
+                        <h3 className="text-base font-bold text-neutral-700 dark:text-white">{item.title}</h3>
+                        <span className="text-sm font-bold text-neutral-500 dark:text-white">Vimeo</span>
+                    </div>
+                </div>
+            </Link>)}
             <Link href='#'>
                 <div className="relative min-h-[60vh] h-full w-full overflow-hidden  group">
                     <div className="absolute top-0 bottom-0 left-0 right-0  bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url(/images/Project1.jpg)" }}></div>
@@ -142,4 +154,24 @@ function Project() {
             </Link>
         </div>
     )
+}
+
+
+export async function getServerSideProps(context) {
+    const client = createClient({
+        projectId: "upsd5y9w",
+        dataset: "production",
+        useCdn: false
+    });
+
+    const query = `*[_type == "blog"]
+    {title,metadesc,releaseDate,blogImage{asset->{path,url}},'slug': slug.current,category[]-> {title,'slug': slug.current},
+    author{author->{name,authorprofile{asset->{path,url}}}}}`;
+    const blogs = await client.fetch(query);
+
+    return {
+        props: {
+            blogs
+        }, // will be passed to the page component as props
+    }
 }
