@@ -7,27 +7,27 @@ import Partners from "../components/partners";
 import Testimonial from "../components/testimonial";
 import Link from "next/link";
 export default function About() {
-    const FadeOut = {
-        offscreen: {
-          opacity: 0,
-          x: ['-100vw'],
-          rotate: -120,
-        },
-        onscreen: {
-          x: 0,
-          rotate: 0,
-          opacity: 1,
-          transition: {
-            type: "ease",
-            duration: 1,
-            bounce: 0.3
-          }
-        }
-    
+  const FadeOut = {
+    offscreen: {
+      opacity: 0,
+      x: ['-100vw'],
+      rotate: -120,
+    },
+    onscreen: {
+      x: 0,
+      rotate: 0,
+      opacity: 1,
+      transition: {
+        type: "ease",
+        duration: 1,
+        bounce: 0.3
       }
-      
-    return (
-        <motion.div
+    }
+
+  }
+
+  return (
+    <motion.div
       initial={"offscreen"}
       whileInView={"onscreen"}
       viewport={{ once: false, amount: 0.5 }}
@@ -42,7 +42,7 @@ export default function About() {
           <div className="flex md:flex-row flex-col md:gap-20 gap-10">
             <div className="md:w-2/5 w-full">
               <p className="mb-5 text-base font-normal">Hello there! My name is <strong>Jaweria.</strong> I am a Front-end developer, and I'm very passionate and dedicated to my work.</p>
-              <p className="mb-5 text-base font-normal">With 3 years experience as a professional a Front-end developer, I have acquired the skills and knowledge necessary to make your project a success.</p>
+              <p className="mb-5 text-base font-normal">Tailoring unique web solutions to meet specific client needs, from portfolio websites to complex web applications.</p>
             </div>
             <div className="md:w-2/5 w-full">
               <ul>
@@ -56,7 +56,7 @@ export default function About() {
                   <span><strong>Study:</strong></span><span className="col-span-2">Shaheed Benazir Bhutto University SBA</span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
-                  <span><strong>Degree:</strong></span><span className="col-span-2">BCS</span>
+                  <span><strong>Degree:</strong></span><span className="col-span-2">BSCS</span>
                 </li>
                 <li className="grid grid-cols-3 mb-2 text-base font-normal">
                   <span><strong>Mail:</strong></span><span className="col-span-2"><Link href="mailto:jaweeriashoukat@gmail.com" rel="noreferrer">jaweeriashoukat@gmail.com</Link></span>
@@ -115,17 +115,17 @@ export default function About() {
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-56 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">PROGRAMMING</h4>
               <div className="flex flex-col gap-7">
-                <ProgressBar programing="Javascript" Percntg="50" />
-                <ProgressBar programing="WordPress" Percntg="70" />
-                <ProgressBar programing="Theme Customization" Percntg="50" />
+                <ProgressBar programing="Figma to Tailwind" Percntg="95" />
+                <ProgressBar programing="HTML5 & CSS3" Percntg="95" />
+                <ProgressBar programing="Tailwind + Nextjs" Percntg="90" />
               </div>
             </div>
             <div className="">
               <h4 className="mb-12 font-bold uppercase after:content-[''] after:w-full after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-40 flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">LANGUAGE</h4>
               <div className="flex flex-col gap-7">
-                <ProgressBar programing="Figma to Tailwind" Percntg="70" />
-                <ProgressBar programing="HTML5 & CSS3" Percntg="75" />
-                <ProgressBar programing="Tailwind + Nextjs" Percntg="65" />
+                <ProgressBar programing="Javascript" Percntg="50" />
+                <ProgressBar programing="WordPress" Percntg="70" />
+                <ProgressBar programing="Theme Customization" Percntg="70" />
               </div>
             </div>
           </div>
@@ -162,5 +162,5 @@ export default function About() {
         </div>
       </motion.div>
     </motion.div>
-    )
+  )
 }
