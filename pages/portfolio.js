@@ -1,7 +1,9 @@
 import { motion } from 'framer-motion';
 import Tabs from '../components/portfolio';
+import { Client } from '../lib/client';
 
-export default function Portfolio() {
+export default function Portfolio({ blog }) {
+  console.log(blog)
   const FadeOut = {
     offscreen: {
       opacity: 0,
@@ -31,10 +33,23 @@ export default function Portfolio() {
       <motion.div
         variants={FadeOut}>
         <div className="mb-24">
-          <h4 className="mb-12 font-bold uppercase after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-[20rem] flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">Creative Portfolio</h4>
+          <h4 className="mb-12 font-bold uppercase after:content-[''] md:after:w-3/4 after:w-2/4 after:h-[1px] after:bg-neutral-400 dark:after:bg-white  after:absolute after:ml-[20rem] flex items-center md:tracking-[7px] tracking-[4px] relative overflow-hidden">
+            Creative Portfolio {blog.title}
+          </h4>
           <Tabs />
         </div>
       </motion.div>
     </motion.div>
   )
+}
+
+
+export async function getStaticProps() {
+  // Blogs 
+  const blog = await Client.fetch(`*[_type == "blog"]`);
+  return {
+    props: {
+      blog,
+    }
+  };
 }
